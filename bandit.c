@@ -16,7 +16,7 @@ int epsilonGlouton(bandit b, double epsilon) {
     // Creation de l'index
     int index;
     // Test de probabilite
-    if (drand() < epsilon) {
+    if (drand() >= epsilon) {
         // Initialisation de la recompense maximale
         double max_rec = 0.0;
         int i;

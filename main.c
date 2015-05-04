@@ -35,6 +35,7 @@ int main() {
         // Si les bras on deja ete appele au moins une fois on appel la fonction
         // e-glouton
         if (b.param[0].active == 1 && b.param[1].active == 1) {
+            // Valeur arbitraire de 0.8 pour epsilon
             int index = epsilonGlouton(b, 0.80);
             b.param[index].som_recompense += recompense(b, index);
             b.param[index].rec_moyenne = b.param[index].som_recompense/j++;
