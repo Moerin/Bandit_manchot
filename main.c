@@ -26,12 +26,14 @@ int main() {
     b.param[0] = p1;
     b.param[1] = p2;
 
+    printf("%f\n", drand());
+    printf("%f\n", drand2());
     int i;
     // Nombre total d'appel a un bras
     int j = 1; // premier bras
     int h = 1; // deuxieme bras
 
-    for (i = 0;i<1000;i++) {
+    for (i = 0;i<10;i++) {
         // Si les bras on deja ete appele au moins une fois on appel la fonction
         // e-glouton
         if (b.param[0].active == 1 && b.param[1].active == 1) {
