@@ -34,7 +34,7 @@ struct bandit {
 };
 
 /** Fonction qui renvoie un double compris entre 0 et 1 */
-double drand () ;
+double drand ();
 
 /** Renvoie la valeur de la recompense ( gain ou perte ) */
 /** lorsqu’on tire sur le bras i du bandit b */

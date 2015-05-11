@@ -1,7 +1,7 @@
 #include "bandit.h"
 
 double drand() {
-    return ((double)rand() * (1.0 - 0.0)) / (double)RAND_MAX + 0.0;
+    return ((double)rand() * 1.0 / (double)RAND_MAX);
 }
 
 double recompense(bandit b, int i) {
